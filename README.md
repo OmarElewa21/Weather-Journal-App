@@ -1,10 +1,16 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This project is a simple node.js and API integration Web application. Its objective is to make a weather web application which updates the UI when clicking on Generate button.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Components
+- server.js     => Contains server configurations - data objects - routings
+- app.js        => Contains methods that sends post and get requests - update UI
+- index.html    => Contains HTML content
+- style.css     => Contains CSS content
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## Quick Run
+- Clone or Download the project
+- run npm install ```npm install ``` command inside the main folder
+- run ```node server.js ``` command inside the main folder
+- open your browser at localhost:3000
