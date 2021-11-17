@@ -60,7 +60,7 @@ async function getWeatherData(zip) {
  * Update the UI with the new weather data based on the Zip Code
  */
 async function update_UI() {
-    let req = await fetch('http://192.168.1.1:3000/home');
+    let req = await fetch('/home');
     try {
         let projectData = await req.json();
         date.innerHTML = `Current Date is: &nbsp&nbsp ${projectData.date}`;
@@ -87,7 +87,7 @@ async function generateData() {
         if (zip.value.length > 0) {
         // if zip has a value
             getWeatherData(zip.value).then(function(data = {}){
-                postData('http://192.168.1.1:3000/updateProjectData', {
+                postData('/updateProjectData', {
                         date: newDate,
                         temp: data.main.temp,
                         feelings: feelings_.value
