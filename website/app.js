@@ -7,9 +7,7 @@ let feelings = document.getElementById("content");
 let generate = document.getElementById("generate");
 
 // Create a new date instance dynamically with JS
-let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
-
+let newDate = new Date().toLocaleString().split(',').find(() => true);
 
 
 /*      Helper Functions      */
